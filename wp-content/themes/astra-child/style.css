@@ -1,0 +1,177 @@
+/******************************* Header *******************************/
+.container {
+    display: flex; 
+    flex-direction: row;
+
+    width: 100%;
+    height: 80px;
+    
+}
+.main-navigation {
+    display: flex;
+    flex-direction: row-reverse!important;
+
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+.logo img {
+    width: 191.61px;
+    height: 18.87px;
+
+    position: absolute;
+
+    display: flex;
+    top: 30px;
+    left: 40px;
+}
+
+#menu-item-56 a.menu-link {
+    color: white;
+}
+
+
+#menu-item-56 {
+    background-color: #DC9F96;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 236px;
+    height: 80px;
+}
+#menu-item-56:hover {
+    font-weight: bold;
+}
+
+#menu-item-57 {
+    color: #000;
+
+    position: absolute;
+    top: 25px;
+    right: 410px;
+
+    white-space: nowrap;
+}
+#menu-item-57:hover {
+font-weight: bold;
+}
+
+#menu-item-60 {
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 25px;
+    right: 290px;
+}
+#menu-item-60:hover {
+    font-weight: bold;
+    }
+
+/******************************* Footer *******************************/
+#site-footer {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-container:hover {
+   font-weight: bold;
+}
+
+/******************************* page d'accueil *******************************/
+.elementor-heading-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px !important;
+
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.6px;
+    text-align: center;
+
+}
+
+.elementor-widget-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Planty6  {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+/******************************* Nous rencontrer *******************************/
+#wpcf7-f247-p52-o1 .wpcf7-submit {
+    color: white;
+    background-color: #E0B9B4;
+
+    border-radius: 5px;
+
+    width: 198px;
+    height: 55px;
+}
+
+#wpcf7-f247-p52-o1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************************* commander *******************************/
+div.elementor.elementor-54 {
+    background-color: #3B8E46;
+}
+
+/******************************* formulaire de contact *******************************/
+.formcontact {
+    display: flex;
+
+    gap: 75px;
+
+    color: white;
+}
+
+input.wpcf7-form-control:nth-child(3) {
+    background-color: #DC9F96;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    left: 360px;
+    position: absolute;
+}
+
+.formcontact label {
+    color: white;
+}
+
+.elementor-element-e11acf5.elementor-widget-divider {
+    /* Appliquez vos styles ici */
+    background-color: #f0f0f0;
+    
+}
+
