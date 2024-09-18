@@ -1,40 +1,28 @@
+/*
+ Theme Name:   astra-child
+ Theme URI:    https://wpastra.com/
+ Description:  Thème enfant pour le site Planty
+ Author URI:   http://exemple.com
+ Template:     astra
+ Version:      1.0.0
+*/
+
 /******************************* Header *******************************/
-.container {
-    display: flex; 
-    flex-direction: row;
-
-    width: 100%;
-    height: 80px;
-    
-}
-.main-navigation {
-    display: flex;
-    flex-direction: row-reverse!important;
-
-    width: 100%;
-}
-.nav-menu {
-    display: flex;
-    flex-direction: row;
-
-    gap: 10px;
+.custom-logo {
+    margin-left: 55% !important;
 }
 
-.logo img {
-    width: 191.61px;
-    height: 18.87px;
+header .custom-logo-link img {
+    max-width: 138%;
+  }
 
-    position: absolute;
-
-    display: flex;
-    top: 30px;
-    left: 40px;
-}
+.ast-container {
+    max-width: 100%;
+  }
 
 #menu-item-56 a.menu-link {
     color: white;
 }
-
 
 #menu-item-56 {
     background-color: #DC9F96;
@@ -45,39 +33,34 @@
     
     width: 236px;
     height: 80px;
+
+    margin-right: -20px;
 }
 #menu-item-56:hover {
-    font-weight: bold;
+    background-color: #C02E44;
 }
 
 #menu-item-57 {
-    color: #000;
-
     position: absolute;
-    top: 25px;
-    right: 410px;
+    top: 38%;
+    right: 125%;
 
     white-space: nowrap;
 }
-#menu-item-57:hover {
-font-weight: bold;
+#menu-item-57 .menu-link:hover {
+    font-weight: bold !important;
 }
 
-#menu-item-60 {
-    color: #ffffff;
+.menu-item-admin {
+    margin-top: 32px;
+    margin-right: 48px;
+    margin-left: -39px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    top: 25px;
-    right: 290px;
+    order: -1;
 }
-#menu-item-60:hover {
+.menu-item-admin:hover {
     font-weight: bold;
-    }
-
+}
 /******************************* Footer *******************************/
 #site-footer {
     width: 100%;
@@ -118,12 +101,45 @@ font-weight: bold;
     justify-content: center;
 }
 
-#Planty6  {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+img.attachment-large.size-large.wp-image-84 {
+    position: absolute;
+    bottom: 100px;
 }
 
+.elementor-element-55a19c9 {
+    position: absolute;
+    width: 145.3px;
+    height: 150.26px;
+    top: -175px;
+    left: -128px;
+
+}
+
+.elementor-50 .elementor-element.elementor-element-8a2f920 .elementor-heading-title {
+    position: absolute;
+    top: -35px;
+}
+
+.elementor-50 .elementor-element.elementor-element-ce2d60d .elementor-heading-title {
+    position:absolute;
+    top: -35px;
+}
+
+.elementor-50 .elementor-element.elementor-element-7f99763 .elementor-heading-title {
+    position:absolute;
+    top: -25px;   
+}
+
+.elementor-50 .elementor-element.elementor-element-8d456f1 .elementor-button {
+    width: 198px;
+    height: 55px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+
+}
 /******************************* Nous rencontrer *******************************/
 #wpcf7-f247-p52-o1 .wpcf7-submit {
     color: white;
@@ -133,12 +149,21 @@ font-weight: bold;
 
     width: 198px;
     height: 55px;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    margin-left:15%;
 }
 
 #wpcf7-f247-p52-o1 p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#wpcf7-f247-p52-o1 .wpcf7-submit:hover {
+    background-color: #C02E44;
 }
 
 /******************************* commander *******************************/
@@ -148,30 +173,275 @@ div.elementor.elementor-54 {
 
 /******************************* formulaire de contact *******************************/
 .formcontact {
-    display: flex;
-
-    gap: 75px;
-
     color: white;
-}
 
-input.wpcf7-form-control:nth-child(3) {
-    background-color: #DC9F96;
-    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
 
-    border-radius: 5px;
-
-    left: 360px;
-    position: absolute;
+    width: 100%;
 }
 
 .formcontact label {
     color: white;
 }
 
-.elementor-element-e11acf5.elementor-widget-divider {
-    /* Appliquez vos styles ici */
-    background-color: #f0f0f0;
-    
+.votre-commande {
+    display: flex;
+    flex-direction: column;
+
+    grid-column: span 2;
+
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+
+}
+.titre {
+    display: flex;
+
+    padding-top: 35px;
 }
 
+.selection {
+    display: flex;
+
+    gap: 9%;
+
+    padding-top: 15px;
+
+}
+.logged-in .selection {
+    display: flex;
+
+    gap: 5.8%;
+
+    padding-top: 15px;
+
+}
+
+.wpcf7-form-control-wrap {
+    display: flex !important;
+    justify-content: center;
+}
+
+.informations {
+    grid-column: 1 / 2;
+
+    padding-right: 50px;
+
+    border-right: 1px solid white;
+}
+
+.livraison {
+    grid-column: 2 / 3;
+
+    padding-left: 50px;
+}
+
+.quantitefraise {
+    display: inline-block;
+
+    width: 120% !important;
+    height: 128.36px;
+
+    padding-top: 38%;
+    padding-left: 40px;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+.quantiteboisson {
+    width: 70px !important;
+    margin-top: 15px;
+
+    display:flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.quantitepamplemousse {
+    display: inline-block;
+
+    width: 115% !important;
+    height: 128.36px;
+
+    padding-top: 50px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+.quantiteboisson1 {
+    width: 70px !important;
+    margin-top: 15px;
+}
+
+
+.quantiteframboise {
+    display: inline-block;
+
+    width: 120% !important;
+    height: 128.36px;
+
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 18px;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+.quantiteboisson2 {
+    width: 70px !important;
+    margin-top: 15px;
+}
+
+.quantitecitron {
+    display: inline-block;
+
+    width: 120% !important;
+    height: 128.36px;
+
+    padding-top: 60px;
+    padding-left: 30px;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+.quantiteboisson3 {
+    width: 70px !important;
+    margin-top: 15px;
+}
+
+.vosinfo {
+    height: 71px !important;
+    width: 100% !important;
+
+    border-radius: 7px;
+}
+
+.livraison {
+height: 71px !important;
+width: 100% !important;
+
+border-radius: 7px;
+}
+
+H3 {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+
+}
+
+.btn {
+    grid-column: span 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: none !important;
+}
+
+.btn-commander {
+    background-color: #E0B9B4 !important;
+    color: white !important;
+
+    border-radius: 5px !important;
+
+    height: 55px !important;
+
+    font-size: 15px !important;
+    font-weight: 400 !important;
+
+    margin-left: 15.5%;
+}
+
+.btn-commander:hover {
+    background-color:#C02E44 !important;
+}
+
+  @media (max-width: 950px) {
+    .formcontact {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 50% !important;
+    }
+  }
+
+  @media (max-width: 790px) {
+    .selection {
+      display: flex;
+      flex-direction: column;
+
+      width: 100% !important;
+
+      font-size: 30px;
+
+      gap:0 !important;
+
+      align-items: center;
+
+    }
+  }
+
+  @media (max-width: 450px) {
+    .elementor-54 .elementor-element.elementor-element-dc40b89 .elementor-heading-title {
+      font-weight: 800;
+      font-size: 25px;
+    }
+  }
+
+ 
+
+  @media (max-width: 950px) {
+    .informations {
+       border-right: none;
+       padding-right:0%;
+       border-bottom: 1px solid white;
+       padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .livraison{
+        padding-left: 0%;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .selection {
+      width: 39%;
+      gap:39px;
+
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 790px) {
+    .titre {
+      justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 790px) {
+    .btn {
+     position: absolute !important;
+    left: 55px !important;
+    top: 2235px !important;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .btn {
+   position: absolute;
+      left: 275px;
+      top: 1406px ;
+    }
+}

@@ -9,7 +9,7 @@ function my_theme_enqueue_styles() {
 
     function add_extra_item_to_nav_menu( $items, $args ) {
         if (is_user_logged_in() && $args->theme_location === 'primary') {
-            $items .= '<li class="menu-item"' . admin_url() . '"> admin </a></li>';
+            $items .= '<li class="menu-item-admin"' . admin_url() . '"> Admin </a></li>';
         }
         return $items;
     }
