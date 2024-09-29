@@ -8,8 +8,11 @@ function my_theme_enqueue_styles() {
     add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
 
     function add_extra_item_to_nav_menu( $items, $args ) {
-        if (is_user_logged_in() && $args->theme_location === 'primary') {
-            $items .= '<li class="menu-item-admin"' . admin_url() . '"> Admin </a></li>';
+        if ( is_user_logged_in() && ($args->theme_location === 'primary' || $args->theme_location === 'mobile_menu'))
+        {
+            $items .= '<li class="menu-item menu-item-admin">
+                          <a href="' . admin_url() . '"> Admin </a></li>';
         }
         return $items;
     }
+?>

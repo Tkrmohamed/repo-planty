@@ -42,8 +42,8 @@ header .custom-logo-link img {
 
 #menu-item-57 {
     position: absolute;
-    top: 38%;
-    right: 125%;
+    top: 33%;
+    right: 115%;
 
     white-space: nowrap;
 }
@@ -60,6 +60,22 @@ header .custom-logo-link img {
 }
 .menu-item-admin:hover {
     font-weight: bold;
+}
+
+.logged-in .ast-builder-menu .main-navigation > ul > li:last-child a {
+    margin-top: -32px;
+}
+.logged-in .ast-builder-menu .main-navigation > ul > li:last-child a {
+    padding-left: 55px;
+}
+
+.logged-in .ast-builder-menu .main-navigation > ul > li:last-child a:hover {
+    font-weight: bold !important;
+ 
+}
+
+.ast-header-break-point .main-navigation .stack-on-mobile li:hover {
+    font-weight: bold !important;
 }
 /******************************* Footer *******************************/
 #site-footer {
@@ -173,7 +189,7 @@ div.elementor.elementor-54 {
 
 /******************************* formulaire de contact *******************************/
 .formcontact {
-    color: white;
+    color: white !important;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,14 +223,6 @@ div.elementor.elementor-54 {
     display: flex;
 
     gap: 9%;
-
-    padding-top: 15px;
-
-}
-.logged-in .selection {
-    display: flex;
-
-    gap: 5.8%;
 
     padding-top: 15px;
 
@@ -344,7 +352,7 @@ H3 {
     align-items: center;
     justify-content: center;
 
-    background-color: none !important;
+    width: 100%;
 }
 
 .btn-commander {
@@ -370,7 +378,7 @@ H3 {
       display: flex;
       flex-direction: column;
 
-      margin-bottom: 50% !important;
+
     }
   }
 
@@ -432,16 +440,86 @@ H3 {
 
   @media (max-width: 790px) {
     .btn {
-     position: absolute !important;
-    left: 55px !important;
+    position: absolute !important;
+    left: 0px !important;
     top: 2235px !important;
     }
   }
   
   @media (max-width: 990px) {
     .btn {
-   position: absolute;
-      left: 275px;
-      top: 1406px ;
+        position: absolute;
+        top: 905px;
+    }
+}
+
+@media (max-width: 950px) {
+    .btn {
+      position: absolute;
+      top: 1395px;
+
+      margin-bottom: 60% !important;
+    }
+}
+
+/***************************** espace pour boutton commander *********************************/
+@media (min-width: 320px) and (max-width: 400px) {
+    .formcontact {
+      margin-bottom: 0% !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+    .formcontact {
+      margin-bottom: -25% !important;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 499px) {
+    .formcontact {
+      margin-bottom: -50% !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 680px) {
+    .formcontact {
+      margin-bottom: 50% !important;
+    }
+  }
+
+@media (min-width: 680px) and (max-width: 790px) {
+    .formcontact {
+      margin-bottom: 35% !important;
+    }
+}
+
+@media (min-width: 790px) and (max-width: 900px) {
+    .formcontact {
+      margin-bottom: 15% !important;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 950px) {
+    .formcontact {
+      margin-bottom: 60% !important;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 990px) {
+    .formcontact {
+      margin-bottom: 20% !important;
+    }
+}
+
+/***************************** feuille page nous rencontrer *********************************/
+@media (min-width: 320px) and (max-width: 480px) {
+    .elementor-52 .elementor-element.elementor-element-e762888 > .elementor-widget-container {
+      display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .elementor-50 .elementor-element.elementor-element-e41faad.elementor-element {
+      width: 33%;
     }
 }
