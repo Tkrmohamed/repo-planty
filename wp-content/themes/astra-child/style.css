@@ -12,9 +12,12 @@
     margin-left: 55% !important;
 }
 
+@media (min-width: 320px) and (max-width: 350px) {
+
 header .custom-logo-link img {
-    max-width: 138%;
+    margin-left: 45% !important;
   }
+}
 
 .ast-container {
     max-width: 100%;
@@ -156,6 +159,20 @@ img.attachment-large.size-large.wp-image-84 {
     text-align: center;
 
 }
+
+@media (min-width: 800px) and (max-width: 901px) {
+.elementor-50 .elementor-element.elementor-element-973554d img {
+    width: 350px !important; }
+}
+
+@media (min-width: 902px) and (max-width: 990px) {
+    .elementor-50 .elementor-element.elementor-element-973554d img {
+        width: 230px !important; }
+    }
+@media (min-width: 1500px) {
+    .elementor-50 .elementor-element.elementor-element-975ad8c:not(.elementor-motion-effects-element-type-background), .elementor-50 .elementor-element.elementor-element-975ad8c > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+        padding-bottom: 90px !important}
+    }
 /******************************* Nous rencontrer *******************************/
 #wpcf7-f247-p52-o1 .wpcf7-submit {
     color: white;
@@ -220,6 +237,7 @@ div.elementor.elementor-54 {
 }
 
 .selection {
+    object-fit: cover !important;
     display: flex;
 
     gap: 9%;
